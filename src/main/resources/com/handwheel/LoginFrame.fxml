@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="300.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.handwheel.LoginWindowController">
+   <children>
+      <GridPane layoutX="18.0" layoutY="32.0" prefHeight="106.0" prefWidth="263.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="62.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="202.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="usernameField" prefHeight="25.0" prefWidth="139.0" GridPane.columnIndex="1" />
+            <Label text="%username" GridPane.halignment="RIGHT">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <Label text="%password" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <HBox prefHeight="41.0" prefWidth="267.0" spacing="5.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+               <children>
+                  <Button defaultButton="true" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="25.0" prefWidth="100.0" text="%signIn" />
+                  <Button mnemonicParsing="false" onAction="#handleSignUp" prefWidth="100.0" text="%signUp" />
+                  <Button mnemonicParsing="false" onAction="#handleClear" prefWidth="100.0" text="%clear" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

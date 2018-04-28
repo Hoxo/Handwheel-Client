@@ -1,0 +1,30 @@
+.button{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 3;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+    -fx-text-fill: black;
+}
+
+.root{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #270004,#510812);
+}
+
+.button:focused {
+    -fx-border-color: transparent;
+    -fx-border-style: solid;
+}
+
+.button:hover {
+}
+
+.label {
+    -fx-text-fill: beige;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightcoral, lightblue);
+    -fx-text-fill: white;
+}
+
