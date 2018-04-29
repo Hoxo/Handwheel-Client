@@ -14,14 +14,6 @@ public class Dialog {
         newMessages = new LinkedList<>();
     }
 
-    private Dialog(String name) {
-        contact = Contact.searchTemplate(name);
-    }
-
-    public static Dialog searchTemplate(String name) {
-        return new Dialog(name);
-    }
-
     public String getContactName() {
         return contact.getName();
     }
